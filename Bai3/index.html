@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="">
+        <img src="../faker.jpg" alt="">
+    </marquee>
+    <h1>FORM ĐIỀN THÔNG TIN</h1>
+    <form>
+        <div>
+            <p><b>Họ và Tên :</b></p>
+            <input type="text" name="hovaten" placeholder="Điền họ vào tên">
+        </div>
+        <div>
+            <p><b>Mã số sinh viên :</b></p>
+            <input type="text" name="mssv" placeholder="Điền mã số sinh viên" value="1313313" readonly>
+            <!-- thuộc tính readonly chỉ cho ng dùng đọc kh tương tác được với form -->
+
+             <!-- thuộc tính value giá trị mặc định của khối -->
+
+              <!-- thuộc tính type kiểu dữ liệu để  ng dùng nhập vào -->
+        </div>
+        <div>
+            <p><b>Giới thiệu bản thân</b></p>
+            <textarea name="gioithieu" id="">Nhập lại giới thiệu...</textarea>
+            <!-- thẻ textarea là vùng rộng để nhập thông tin lớn hơn thẻ input -->
+        </div>
+        <div>
+            <p><b>Email</b></p>
+            <input type="email" name="email" placeholder="Điền email">
+        </div>
+        <div>
+            <p><b>Số điện thoại :</b></p>
+            <input type="tel" name="sodienthoai" placeholder="Điền số điện thoại" required pattern="([0]{1}([3,4,8,9]{1})([0-9]{8}))">
+            <!-- Thuộc tính required bắt ng dùng điền đầy đủ thông tin vào khối đó -->
+
+             <!-- Thuộc tính pattern bắt ng dùng điền đúng định dạng theo yêu cầu -->
+        </div>
+        <div>
+            <p><b>Giới tính :</b></p>
+            <input type="radio" name="gioitinh" value="nam">Nam <br>
+            <input type="radio" name="gioitinh" value="nữ">Nữ <br>
+            <!-- Thuộc tính radio tạo ô cho ng dùng lựa chọn nhưng chỉ chọn được 1 ô  -->
+        </div>
+         <div>
+            <p><b>Sở thích :</b></p>
+            Chơi game<input type="checkbox" name="sothich" value="Chơi game"> <br>
+            Chơi thể thao<input type="checkbox" name="sothich" value="Chơi thể thao"><br>
+            Du lịch<input type="checkbox" name="sothich" value="Du lịch"><br>
+            Học tập<input type="checkbox" name="sothich" value="Học tập"><br>
+            <!-- Thuộc tính checkbox giống với radio nhưng được chọn nhiều ô  -->
+        </div>
+        <div>
+            <p><b>Trình duyệt yêu thích :</b></p>
+            <select name="trinhduyet" id="">
+                <option value="coc coc">Cốc cốc</option>
+                <option value="chrome">Chrome</option>
+                <option value="google">Google</option>
+                <option value="firefox">Fire Fox</option>
+            </select>
+        </div>
+        <div>
+            0 <input type="range" value="80">100
+            <!-- type range chỉ khoảng cách -->
+        </div>
+        <div>
+             <p><b>Tuổi : <i></p>
+            <input type="number" name="tuoi" step="2">
+             <!-- type number chỉ nhập vào số  -->
+              <!-- thuộc tính step chỉ bước nhảy  -->
+        </div>
+        <div>
+             <p><b>Ngày tháng năm sinh : <i></p>
+            <input type="date" name="ngaythangnamsinh">
+            <!--type date chỉ nhập ngày tháng năm  -->
+        </div>
+        <div>
+             <p><b>Chọn màu sắc : <i></p>
+            <input type="color" name="mau" >   
+             <!--type color chỉ nhập màu sắc  -->
+        </div>
+        <div>
+             <p><b>Mật khẩu: <i></p>
+            <input type="password" name="matkhau" > 
+            <!-- type password nhập từ bàn phím sẽ ẩn thông tin hiện lên màn hình -->
+        </div>
+        <br>
+         <div>
+            <input type="submit">
+            <!-- type submit gửi form vừa nhập -->
+            <input type="reset">
+            <!-- type reset làm mới form -->
+        </div>
+    </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0r5ZMM3_vh8?si=tLljL3uxK0ahE3Sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        <audio controls src="" type="audio/mp3"></audio>
+    </div>
+    <div>    
+        <video controls src="" type="video/mp4" ></video>
+    </div>
+    <div>
+       Đay là thẻ &lt;h1&gt
+    </div>
+</body>
+</html>
