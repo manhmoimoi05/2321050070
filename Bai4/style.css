@@ -1,0 +1,19 @@
+h1 {
+  color: rgb(191, 191, 25);
+}
+.box1 {
+  background-color: aqua;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+.box2 {
+  background-color: violet;
+  margin: 50px 100px 10px 70px;
+  /* margin với 4 giá trị sẽ cách lần lượt theo chiều kim đồng hồ
+   */
+}
+.box3 {
+  background-color: tomato;
+}
