@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: Roboto, Arial, Tahoma;
+}
+nav{
+    background-color: #0c4ca3;
+    
+}
+ul{
+    display: flex;
+    list-style: none;  
+    /* gap: 20px; xét khoảng cách các phần tử bên trong thẻ ul */
+    justify-content: center;
+    /* căn giữa các mục */
+}
+.danhmuc-lienket{
+    color: white;
+    text-decoration: none;
+}
+li{
+    padding: 15px;
+}
+.border{
+    border-right: 1px solid gray;
+}
+.banner-qc{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.qc {
+    display: flex;
+    justify-content:space-between;
+}
+header{
+    border-bottom: 15px solid #f1f1f2;
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+}
+.news-photo{
+    display: flex;
+    justify-content: center;
+}
+.news-photo img {
+    width: 30vh;
+}
+.new-content{
+    width: 30vh;
+    padding: 15px;
+}
