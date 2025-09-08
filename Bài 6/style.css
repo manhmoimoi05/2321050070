@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  color: white;
+}
+img {
+  width: 5vh;
+}
+.card {
+  display: flex;
+}
+.header {
+  height: 50px;
+}
+.container {
+  display: flex;
+  gap: 5px;
+}
+.left {
+  width: 300px;
+  height: 1000px;
+  background-color: rgba(128, 128, 128, 0.274);
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  border-radius: 10px;
+}
+.middle {
+  width: 500px;
+  width: 1000px;
+  background-color: rgba(128, 128, 128, 0.274);
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  border-radius: 10px;
+}
+.right {
+  width: 300px;
+  height: 1000px;
+  background-color: rgba(128, 128, 128, 0.274);
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  border-radius: 10px;
+}
+.top-list {
+  display: flex;
+}
+.top-list a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  border-radius: 10px;
+  margin-right: 5px;
+}
