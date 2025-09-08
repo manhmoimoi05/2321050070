@@ -1,52 +1,235 @@
-body{
-    margin: 0;
-    font-family: Roboto, Arial, Tahoma;
+body {
+  margin: 0;
+  font-family: Roboto, Arial, Tahoma;
 }
-nav{
-    background-color: #0c4ca3;
-    
+nav {
+  background-color: #0c4ca3;
 }
-ul{
-    display: flex;
-    list-style: none;  
-    /* gap: 20px; xét khoảng cách các phần tử bên trong thẻ ul */
-    justify-content: center;
-    /* căn giữa các mục */
+ul {
+  display: flex;
+  list-style: none;
+  /* gap: 20px; xét khoảng cách các phần tử bên trong thẻ ul */
+  justify-content: center;
+  /* căn giữa các mục */
 }
-.danhmuc-lienket{
-    color: white;
-    text-decoration: none;
+.danhmuc-lienket {
+  color: white;
+  text-decoration: none;
 }
-li{
-    padding: 15px;
+li {
+  padding: 15px;
 }
-.border{
-    border-right: 1px solid gray;
+.border {
+  border-right: 1px solid gray;
 }
-.banner-qc{
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+.kich-thuoc {
+  width: 1020px;
+  height: 417.96px;
+  margin: 0 auto 20px;
+}
+.banner-qc {
+  display: flex;
 }
 .qc {
-    display: flex;
-    justify-content:space-between;
+  display: flex;
 }
-header{
-    border-bottom: 15px solid #f1f1f2;
+.anh-qc {
+  border: 0.5px solid gray;
+  margin-right: 5px;
 }
-.news{
-    display: flex;
-    justify-content: space-between;
+.anh-qc-1{
+  width: 22vh;
 }
-.news-photo{
-    display: flex;
-    justify-content: center;
+header {
+  border-bottom: 10px solid rgb(209, 206, 206);
 }
-.news-photo img {
-    width: 30vh;
+.news,
+.tb-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
 }
-.new-content{
-    width: 30vh;
-    padding: 15px;
+.tin-tuc {
+  font-size: larger;
+  text-decoration: none;
+  color: #024da1;
+  border-bottom: 2px solid #0f75bc;
+  padding: 10px;
+}
+.xem-them {
+  font-size: small;
+  text-decoration: none;
+  color: #939597;
+  padding-top: 20px;
+}
+.news-photo {
+  display: flex;
+  justify-content: center;
+}
+.new-content {
+  width: 30vh;
+  padding: 20px;
+}
+.new-content img {
+  width: 30vh;
+}
+.new-content p {
+  font-size: small;
+}
+.chay-thu-anh img {
+  width: 153px;
+  height: 61.6px;
+  border: 1px solid gray;
+  margin-right: -5px;
+}
+.chay-thu {
+  display: flex;
+}
+.chay-thu-nut {
+  border: 1px solid gray;
+  margin-left: 6px;
+  height: 62.2px;
+}
+.chay-thu-nut p {
+  font-size: small;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+  background-color: #93959739;
+}
+.tb-content {
+  display: flex;
+  justify-content: baseline;
+}
+.tb-anh,
+.tb-thong-tin,
+.tb-tin-tuc {
+  width: 342px;
+}
+.tb-thong-tin p {
+  font-size: small;
+}
+.tb-tin-tuc p {
+  font-size: large;
+  color: #0c4ca3;
+  text-align: center;
+}
+.tb-thong-tin {
+  position: relative;
+}
+.tb-thong-tin a {
+  position: absolute;
+  right: 10px;
+}
+.news-1 a {
+  padding: 11.5px;
+  margin-right: 10px;
+}
+.tin-tuc2 {
+  font-size: small;
+}
+.ts-content img {
+  text-align: center;
+  width: 32vh;
+}
+.ts-news {
+  display: flex;
+}
+.ts-content2 {
+  margin-right: 18px;
+}
+.ts-content2 img {
+  text-align: center;
+  width: 32vh;
+}
+.kich-thuoc2 {
+  width: 1020px;
+  height: 317.96px;
+  margin: 0 auto 20px;
+}
+.anh-doi-tac img {
+  width: 28vh;
+  border: 0.1px solid rgba(128, 128, 128, 0.371);
+  margin-right: 5px;
+}
+.video-link {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+}
+.kich-thuoc3 {
+  width: 1020px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+.link a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  border-bottom: 1px dotted white;
+}
+.video p {
+  color: white;
+  border-bottom: 1px dotted white;
+  padding: 5px;
+}
+.link {
+  border-left: 1px dotted white;
+}
+.container2 {
+  background-color: #024da1;
+  padding: 20px;
+}
+.container2 p {
+  color: white;
+}
+.map1 {
+  font-size: larger;
+}
+.map2 {
+  font-size: small;
+}
+.chan-trang {
+  display: flex;
+  justify-content: space-between;
+}
+.vitri-tren a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.vitri-tren {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+  /* padding: 10px; */
+}
+.vitri-phai {
+  padding-top: 20px;
+}
+.vitri-trai a {
+  margin-bottom: 10px;
+}
+.vitri-phai a {
+  margin-bottom: 10px;
+}
+.vitri-duoi {
+  text-align: end;
+}
+.fa-brands {
+  margin-right: 10px;
+  width: 30px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.262);
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+i:hover {
+  background-color: white;
+  padding-top: 6px;
 }
