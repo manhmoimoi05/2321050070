@@ -1,0 +1,44 @@
+img{
+    width: 40vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 1000px;
+    height: 500px;
+    background-color:rgba(128, 128, 128, 0.468);
+    display: flex;
+    padding: 50px;
+    border-radius: 20px;
+    
+    justify-content: space-around;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-left a{
+    margin-top: 20px;
+    color: black;
+}
+.form-5{
+    width: 200px;
+    height: 30px;
+   
+}
+.form-right a{
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+
+}
