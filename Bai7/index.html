@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <script>
+      document.writeln("chào em" + "<br>");
+      let Name = "<h1>moy van vo</h1>";
+      document.writeln(Name);
+      const pi = 3.14;
+      let So1 = 19;
+      let So2 = 99;
+      let DapAn = 0;
+      document.writeln("<p>Tổng = </p>" + (So1 + So2));
+      document.writeln("<div>Hiệu =</div> " + (So1 - So2) + "<br>");
+      document.writeln("Tích = " + So1 * So2 + "<br>");
+      document.writeln("Chia = " + So1 / So2 + "<br>");
+      // trong js == chỉ kiểm tra giá trị của biến
+      // trong js === kiểm tra kiểu dữ liệu và giá trị của biến đó
+      let ThongTinSinhVien = {
+        HoVaTen: "Pham Thành Kheng",
+        Tuoi: 36,
+        GioiTinh: true,
+        Lop: "Tin Học",
+      };
+      let DiaChi = {
+        ThanhPho: "Hà Nội",
+        QuanHuyen: "Quan Hoa",
+        SoNha: 36,
+      };
+      let NamNay = 2025;
+      let NamSinh = NamNay - ThongTinSinhVien.Tuoi
+      ThongTinSinhVien.ViTri = DiaChi;
+      document.writeln(
+        "<h2>Xin Chào </h2>" +
+          ThongTinSinhVien.HoVaTen +
+          " <br> học lớp " +
+          ThongTinSinhVien.Lop +
+          "<br> Nhà ở " +
+          ThongTinSinhVien.ViTri.ThanhPho +
+          "<br> Số Nhà " +
+          ThongTinSinhVien.ViTri.SoNha+
+          "<br> Năm sinh :"+NamSinh
+      );
+      let SoKhat = "108";
+      SoKhat = parseInt(SoKhat);
+      document.writeln(typeof(SoKhat))
+    </script>
+  </body>
+</html>
