@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let ThongTinDonHang = {
+      //   MaDonHang: "10abc",
+      //   ThongTinKhacHang: {
+      //     HoTen: "Phan Van Manh",
+      //     SoDienThoai: "0345446102",
+      //     TrangThaiThanhVien: True,
+      //   },
+      //   DanhSachSanPham: {
+      //     SanPham1: {
+      //       MaSanPham: "1",
+      //       TenSanPham: "Cà Phê",
+      //       SoLuong: 10,
+      //       GiaTien: 100,
+      //     },
+      //     SanPham2: {
+      //       MaSanPham: "2",
+      //       TenSanPham: "Matcha",
+      //       SoLuong: 20,
+      //       GiaTien: 200,
+      //     },
+      //     SanPham3: {
+      //       MaSanPham: "3",
+      //       TenSanPham: "TraSua",
+      //       SoLuong: 30,
+      //       GiaTien: 300,
+      //     },
+      //   },
+      //   TrangThaiThanhToan: True,
+      //   DiaChiGiaoHang: "Hà Nội",
+      // };
+
+      // let TongSp =
+      //   ThongTinDonHang.DanhSachSanPham.SanPham1.SoLuong *
+      //     ThongTinDonHang.DanhSachSanPham.SanPham1.GiaTien +
+      //   ThongTinDonHang.DanhSachSanPham.SanPham2.SoLuong *
+      //     ThongTinDonHang.DanhSachSanPham.SanPham2.GiaTien +
+      //   ThongTinDonHang.DanhSachSanPham.SanPham3.SoLuong *
+      //     ThongTinDonHang.DanhSachSanPham.SanPham3.GiaTien;
+      // document.writeln("alo");
+      // document.writeln(TongSp);
+      // String
+      let HoTen = "Phan Văn Mạnh";
+      let Name = "cuts";
+      //Trả về kích thước của chuỗi
+      document.writeln(HoTen.length);
+      //Trả về vị trí index
+      document.writeln(HoTen[9]);
+      //Cắt chuỗi theo vị trí index
+      document.writeln(HoTen.slice(5, 9));
+      //Thay thế chuỗi
+      document.writeln(HoTen.replace("Phan", "cuts"));
+      //Viết hoa thường
+      document.writeln(HoTen.toLowerCase());
+      //Kiểm tra kí tự trong chuỗi trả về vị trí index
+      document.writeln(HoTen.indexOf("z"));
+      //Kiểm tra kí tự trong chuỗi trả về true false
+      document.writeln(HoTen.includes("a"));
+      //Tách chuỗi thành mảng
+      document.writeln(HoTen.split("a"));
+      //Rút gọn số sau dấu phẩy
+      let pi = 3.14159;
+      document.writeln(pi.toFixed(3));
+      // isNaN : not a number không phải số
+      document.writeln(isNaN(pi));
+      //Date
+      let ToDay = new Date();
+      document.writeln(ToDay);
+      //Lấy ra năm tháng ngày
+      document.writeln("Năm :",ToDay.getFullYear())
+      document.writeln("Tháng :",ToDay.getMonth() + 1)
+      document.writeln("Thứ :",ToDay.getDay() + 1)
+    </script>
+  </body>
+</html>
