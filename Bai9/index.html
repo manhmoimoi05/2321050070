@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Mảng
+      let arr = [1,2,3,4,"a","k"];
+
+      // Kiểm tra 1 phần tử có phải mang kiểu dữ liệu của mảng hay không
+      document.writeln(Array.isArray(arr));
+
+      //Trả về kích thước mảng
+      document.writeln(arr.length)
+      document.writeln(arr[1])
+
+      //Kiểm tra giá trị của 1 phần tử trong mảng trả về vị trí index , không tồn tại trả về -1
+      document.writeln(arr.indexOf("a"))
+
+      //Trả về vị trí cuối cùng của phần tử đó trong mảng
+      document.writeln(arr.lastIndexOf("a"),"<br>")
+
+      //Thay đổi giá trị của phần tử trong mảng
+      arr[4] = "k"
+
+      //Nối các mảng với nhau
+      let a,b,c,d;
+      a=[1,2,4]
+      b=["alo",123]
+      c=0.24
+      d = a.concat(b,c)
+      document.writeln(d)
+
+      //Chuyển 1 mảng về 1 chuỗi
+      d =d.join("?")
+      document.writeln(d)
+
+      //Xóa và thêm phần tử cuối cùng trong mảng
+      a.pop();
+      a.push("Khang");
+      document.writeln(a,"<br>")
+
+      // Xóa và thêm phần tử đầu tiên trong mảng
+      a.shift()
+      a.unshift("first")
+      document.writeln(a,"<br>")
+
+      //Đảo lại mảng
+      a.reverse()
+      document.writeln(a,"<br>")
+
+      //Biểu thức điều kiện If elseif else
+      let Ak = 906
+      if(Ak % 2 === 0){
+        document.writeln(Ak," là số chẵn")
+      }
+      else{
+        document.writeln("lẻ")
+      }
+      //vd1
+      let now = new Date().getHours()
+      if(now<10 && now >=5){
+        document.writeln("Chào buổi sáng")
+      }else if(now<13 && now >=10){
+        document.writeln("Chào buổi trưa")
+      }else if(now<17 && now >=13){
+        document.writeln("Chào buổi chiều")
+      }else{
+        document.writeln("Chào buổi tối")
+      }
+      //vd2
+       let A = Number(prompt("a = "))
+       let B = Number(prompt("b = "))
+       let C = Number(prompt("c = "))
+       let diem = A*0.6 + B*0.3 + C*0.1
+      if(diem<10 && diem >=8){
+        document.writeln("A")
+      }else if(diem<8 && diem >=7){
+        document.writeln("B")
+      }else if(diem<7 && diem >=5){
+        document.writeln("C")
+      }else if(diem<5 && diem >=4){
+        document.writeln("C")
+      }else{
+        document.writeln("F")
+      }
+    </script>
+  </body>
+</html>
