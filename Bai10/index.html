@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //switch .... case
+      let lich = new Date();
+      let thu = lich.getDay();
+      switch (thu) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+          document.writeln("Các ngày trong tuần");
+          break;
+        case 6:
+          document.writeln("Thứ 7 máu chảy về ?");
+          break;
+        case 0:
+          document.writeln("CN máu chảy về ?");
+          break;
+        default:
+          document.writeln("Không có gì cả");
+          break;
+      }
+
+      //Vòng lặp for
+      let danhSach = [
+        "Dương Trần Nhật	Anh",
+        "Dương Vũ	Anh ",
+        "Trần Vũ Hải	Anh ",
+        "Bùi Ngọc	Bích ",
+        "Phạm Quốc	Bình ",
+        "Nguyễn Văn	Chung ",
+        "Hoàng Mạnh	Cường ",
+        "Ngô Hoàng	Dương ",
+        "Phạm Văn	Đại ",
+        "Nguyễn Đình	Đạt ",
+        "Phạm	Đức ",
+        "Vũ Trung	Đức ",
+        "Phạm Hương	Giang ",
+        "Phạm Quang	Hậu ",
+        "Trần Văn	Hiệp ",
+        "Nguyễn Văn	Hoàng ",
+        "Phạm Quốc	Hoàng ",
+        "Phạm Thị	Huế ",
+        "Trần Công	Hùng ",
+        "Đào Thế	Huy ",
+        "Đỗ Quang	Huy ",
+        "Phạm Quang	Huy ",
+        "Phạm Thành	Khang ",
+        "Bùi Văn	Khiêm ",
+        "Nguyễn Tiến	Khởi ",
+        "Đỗ Trung	Kiên ",
+        "Vương Hà	Linh ",
+        "Đào Quang	Lộc ",
+        "Ngô Gia	Lộc ",
+        "Bùi Văn	Mạnh ",
+        "Nguyễn Văn	Mạnh ",
+        "Phan Văn	Mạnh ",
+        "Trương Công	Minh ",
+        "Đỗ Thành	Nam ",
+        "Lê Duy	Nam ",
+        "Nguyễn Hoàng	Nam ",
+        "Nguyễn Anh	Quân ",
+        "Cao Thị Thu	Quyên ",
+        "Phạm Gia	Tài ",
+        "Nguyễn Thị Thanh	Tâm  ",
+        "Nguyễn Đình	Thái ",
+        "Lưu Tiến	Thành ",
+        "Trần Văn	Thành ",
+        "Nguyễn Thị	Thúy ",
+        "Nguyễn Thị	Thúy ",
+        "Bùi Duy	Tiến ",
+        "Nguyễn Văn	Tiến ",
+        "Đỗ Văn	Trung ",
+        "Phạm Đan	Trường ",
+        "Lê Thị Cẩm	Tú ",
+        "Phan Văn	Tuân ",
+        "Cao Thái	Tuấn ",
+        "Nguyễn Duy	Tuấn ",
+        "Nguyễn Huy	Tuấn ",
+        "Thiều Văn	Việt ",
+        "Nguyễn Kiều	Vy",
+      ];
+      let count = 0;
+      for (let i = 0; i < danhSach.length; i++) {
+        if (danhSach[i].toUpperCase().endsWith("ANH")) {
+          document.writeln(danhSach[i], "<br>");
+          count++;
+        }
+      }
+      document.writeln(count);
+
+      //while và do...while
+      let a = 1;
+      while (a <= 10) {
+        document.writeln(a);
+        a++;
+      }
+
+      //pop up
+      alert("hi chào cậu");
+
+      let result = confirm("Chọn đi :");
+      if (result) {
+        document.writeln("Bạn chọn ok");
+      } else {
+        document.writeln("Bạn chọn hủy");
+      }
+
+      let Nhap = prompt("Nhập tên : ");
+      document.writeln(Nhap);
+      let Nhap2 = prompt("Nhập năm sinh : ");
+      document.writeln(Nhap2);
+
+      //function
+      function SayHi(){
+        document.writeln("Anh tôi đấy")
+      }
+      SayHi()
+      function SayName(name , date){
+        document.writeln("Anh tôi đấy ",name," hẹ hẹ hẹ ",date)
+      }
+      SayName(Nhap , Nhap2)
+    </script>
+  </body>
+</html>
