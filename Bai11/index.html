@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Tính tổng</h1>
+    <div>
+      <p>Nhập số thứ nhất</p>
+      <input type="number" name="" id="SoThuNhat" />
+    </div>
+    <div>
+      <p>Nhập số thứ hai</p>
+      <input type="number" name="" id="SoThuHai" />
+    </div>
+    <button id="Button">Tính toán</button>
+    <div>
+      <p>Kết Quả</p>
+      <input type="number" name="" id="KetQua" />
+    </div> -->
+
+    <!-- tính điểm -->
+    <h1>Tính Điểm</h1>
+    <div>
+      <p>Nhập điểm A</p>
+      <input type="number" name="" id="DiemA" />
+    </div>
+    <div>
+      <p>Nhập điểm B</p>
+      <input type="number" name="" id="DiemB" />
+    </div>
+    <div>
+      <p>Nhập điểm C</p>
+      <input type="number" name="" id="DiemC" />
+    </div>
+    <button id="KetQua">Tính Điểm</button>
+    <div>
+      <p>Kết quả số</p>
+      <input type="number" name="" id="DiemTongSo" />
+    </div>
+    <div>
+      <p>Kết quả chữ</p>
+      <input type="text" name="" id="DiemTongChu" />
+    </div>
+    <script>
+      //bài tập
+      // let a = Number(prompt("Nhập số :"));
+      // function cothamso(x) {
+      //   if (Number.isInteger(x)) {
+      //     for (let i = 0; i <= a; i++) {
+      //       document.writeln("xin chào " + i + "<br>");
+      //     }
+      //   } else if(!x){
+      //     document.writeln("Không phải số")
+      //   }
+      // }
+      // cothamso(a);
+
+      //học
+      // function TinhTong() {
+
+      //   let a = Number(document.getElementById("SoThuNhat").value);
+      //   let b = Number(document.getElementById("SoThuHai").value);
+
+      //   let CanhBao =""
+
+      //   if(!SoThuNhat){
+      //     CanhBao +"Nhập sai số thứ nhất"
+      //   }
+      //   if(!SoThuHai){
+      //     CanhBao +"Nhập sai số thứ hai"
+      //   }
+      //   if(CanhBao){
+      //     alert()
+      //   }
+      //   let Tong = a + b;
+      //   let KetQua = document.getElementById("KetQua");
+      //   KetQua.value = Tong;
+
+      // }
+      // let ButtonNew = document.getElementById("Button");
+      // ButtonNew.addEventListener("click", TinhTong);
+
+      // Bài tập tính điểm
+      function TinhDiem() {
+        let a = Number(document.getElementById("DiemA").value);
+        let b = Number(document.getElementById("DiemB").value);
+        let c = Number(document.getElementById("DiemC").value);
+
+        let CanhBao = "";
+        if (!a) {
+          CanhBao += "Nhập sai điểm A ";
+        }
+        if (!b) {
+          CanhBao += "Nhập sai điểm B ";
+        }
+        if (!c) {
+          CanhBao += "Nhập sai Điểm C";
+        }
+        if (CanhBao) {
+          alert(CanhBao);
+        }
+
+        let Diem = a * 0.6 + b * 0.3 + c * 0.1;
+        let KetQua = document.getElementById("DiemTongSo");
+        KetQua.value = Diem;
+        let KetQua2 = document.getElementById("DiemTongChu");
+
+        if (Diem <= 10 && Diem > 8) {
+          KetQua2.value = "A";
+        } else if (Diem <= 8 && Diem > 6) {
+          KetQua2.value = "B";
+        } else if (Diem <= 6 && Diem > 4) {
+          KetQua2.value = "C";
+        } else if (Diem <= 4) {
+          KetQua2.value = "D";
+        }
+      }
+
+      let ButtonNew = document.getElementById("KetQua");
+      ButtonNew.addEventListener("click", TinhDiem);
+    </script>
+  </body>
+</html>
