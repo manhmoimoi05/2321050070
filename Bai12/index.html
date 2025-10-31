@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 100px auto;
+        padding-top: 10px;
+        display: flex;
+        width: 500px;
+        height: 300px;
+        background-color: pink;
+        border-radius: 20px;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input type="text" name="" id="CanNang" placeholder="enter cân nặng" />
+        <input
+          type="text"
+          name=""
+          id="ChieuCao"
+          placeholder="enter chiều cao"
+        />
+
+        <button class="button">Tính toán</button>
+      </form>
+      <p class="KetQua"></p>
+      <img class="img" src="" alt="" />
+    </div>
+    <script>
+      function TinhToan() {
+        const cn = Number(document.querySelector("#CanNang").value);
+        const cc = Number(document.querySelector("#ChieuCao").value);
+        const bmi = cn / (cc * cc);
+        let text = document.querySelector(".KetQua");
+        text.innerHTML = "chỉ số BMI của bạn là : "+bmi
+        let img = document.querySelector(".img");
+        if (bmi < 18.5) {
+          img.src = "./z7173870276393_8d9e4cda002d0ee4bbeda73ed2147a03.jpg";
+        } else if (bmi > 18.5 && bmi <= 24.9) {
+          img.src = "./z7173870475372_38cac1af6365012333203ca3a0ccaeb3.jpg";
+        }else if(bmi > 25 && bmi <= 29.9 ){
+          img.src = "./z7173870289704_1c8d039a015e66eb8df995ad78aeac81.jpg"
+        }else if(bmi > 30 && bmi <= 39.9){
+          img.src = "./z7173870376121_2decd8a655f001071cf961efa90f778d.jpg"
+        }else if(bmi > 40){
+          img.src = "./z7173870444523_e30867f79d29fa2e23ceb49a67f0bdbd.jpg"
+        }
+      }
+      const button = document.querySelector(".button");
+      button.addEventListener("click", TinhToan);
+    </script>
+  </body>
+</html>
